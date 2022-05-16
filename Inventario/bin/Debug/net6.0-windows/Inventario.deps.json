@@ -7,14 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Inventario/1.0.0": {
+        "dependencies": {
+          "Logica": "1.0.0"
+        },
         "runtime": {
           "Inventario.dll": {}
+        }
+      },
+      "BDatos/1.0.0": {
+        "runtime": {
+          "BDatos.dll": {}
+        }
+      },
+      "Logica/1.0.0": {
+        "dependencies": {
+          "BDatos": "1.0.0"
+        },
+        "runtime": {
+          "Logica.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Inventario/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BDatos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Logica/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

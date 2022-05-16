@@ -19,3 +19,16 @@ C:\Users\nixon\source\repos\Inventario\Inventario\obj\Debug\net6.0-windows\Inven
 C:\Users\nixon\source\repos\Inventario\Inventario\obj\Debug\net6.0-windows\ref\Inventario.dll
 C:\Users\nixon\source\repos\Inventario\Inventario\obj\Debug\net6.0-windows\Inventario.FrmEliminarcs.resources
 C:\Users\nixon\source\repos\Inventario\Inventario\obj\Debug\net6.0-windows\Inventario.FrmModificar.resources
+C:\Users\nixon\source\repos\Inventario\Inventario\obj\Debug\net6.0-windows\Inventario.Login.resources
+C:\Users\nixon\source\repos\Inventario\Inventario\obj\Debug\net6.0-windows\Inventario.Properties.Resources.resources
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\Logica.deps.json
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\Logica.runtimeconfig.json
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\BDatos.deps.json
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\BDatos.runtimeconfig.json
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\BDatos.exe
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\Logica.exe
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\BDatos.dll
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\Logica.dll
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\Logica.pdb
+C:\Users\nixon\source\repos\Inventario\Inventario\bin\Debug\net6.0-windows\BDatos.pdb
+C:\Users\nixon\source\repos\Inventario\Inventario\obj\Debug\net6.0-windows\Inventario.csproj.CopyComplete
