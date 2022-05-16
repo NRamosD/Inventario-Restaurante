@@ -30,6 +30,7 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,9 +48,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(113, 83);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(250, 26);
+            this.label2.Size = new System.Drawing.Size(269, 26);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Ingrese el id del producto";
+            this.label2.Text = "Ingrese el id del ingrediente";
             // 
             // panel1
             // 
@@ -61,6 +61,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(783, 54);
             this.panel1.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(355, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(97, 24);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Eliminar";
             // 
             // textBox3
             // 
@@ -123,6 +134,8 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(177, 34);
             this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // button1
             // 
@@ -130,23 +143,13 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(298, 355);
+            this.button1.Location = new System.Drawing.Point(322, 361);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 52);
             this.button1.TabIndex = 13;
             this.button1.Text = "Eliminar";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(273, 19);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(190, 24);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Eliminar producto";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmEliminarcs
             // 

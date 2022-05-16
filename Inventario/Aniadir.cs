@@ -16,5 +16,26 @@ namespace Inventario
         {
             InitializeComponent();
         }
+
+        LogicaOperacion objL = new LogicaOperaciones();
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                objL.OpInsertarIngrediente(txtNombre.Text, txtCantidad.Text, txtPrecio.Text);
+                MessageBox.Show("Datos ingresados con éxito");
+
+            }
+            catch
+            {
+                MessageBox.Show("No se puede almacenar los datos ingresados");
+            }
+        }
+
+        private void Aniadir_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
