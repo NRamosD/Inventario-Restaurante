@@ -14,22 +14,6 @@
         "frameworkReferences": [
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
-      },
-      "Logica/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "BDatos": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Logica.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Logica.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
       }
     }
   },
@@ -38,16 +22,11 @@
       "type": "project",
       "path": "../BDatos/BDatos.csproj",
       "msbuildProject": "../BDatos/BDatos.csproj"
-    },
-    "Logica/1.0.0": {
-      "type": "project",
-      "path": "../Logica/Logica.csproj",
-      "msbuildProject": "../Logica/Logica.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Logica >= 1.0.0"
+      "BDatos >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -56,11 +35,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nixon\\source\\repos\\Inventario\\Inventario\\Inventario.csproj",
-      "projectName": "Inventario",
-      "projectPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Inventario\\Inventario.csproj",
+      "projectUniqueName": "C:\\Users\\nixon\\source\\repos\\Inventario\\Logica\\Logica.csproj",
+      "projectName": "Logica",
+      "projectPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Inventario\\obj\\",
+      "outputPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,8 +55,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\nixon\\source\\repos\\Inventario\\Logica\\Logica.csproj": {
-              "projectPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Logica\\Logica.csproj"
+            "C:\\Users\\nixon\\source\\repos\\Inventario\\BDatos\\BDatos.csproj": {
+              "projectPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\BDatos\\BDatos.csproj"
             }
           }
         }
