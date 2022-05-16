@@ -1,6 +1,6 @@
 ﻿namespace Inventario
 {
-    partial class FrmAniadircs
+    partial class FrmModificar
     {
         /// <summary>
         /// Required designer variable.
@@ -37,8 +37,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,6 +125,17 @@
             this.panel2.Size = new System.Drawing.Size(614, 55);
             this.panel2.TabIndex = 6;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(215, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(171, 24);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Añadir producto";
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(131)))), ((int)(((byte)(0)))));
@@ -138,18 +149,7 @@
             this.button1.Text = "Aceptar";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(215, 20);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(171, 24);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Añadir producto";
-            // 
-            // FrmAniadircs
+            // FrmModificar
             // 
             this.ClientSize = new System.Drawing.Size(614, 443);
             this.Controls.Add(this.button1);
@@ -160,7 +160,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Name = "FrmAniadircs";
+            this.Name = "FrmModificar";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inventario
 {
-    public partial class FrmAniadircs : Form
+    public partial class FrmModificar : Form
     {
-        public FrmAniadircs()
+        public FrmModificar()
         {
             InitializeComponent();
         }

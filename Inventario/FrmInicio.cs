@@ -30,5 +30,29 @@ namespace Inventario
             this.PanelPrincipal.Controls.Add(frmAniadir);
             frmAniadir.Show();
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            if (this.PanelPrincipal.Controls.Count > 0)
+                this.PanelPrincipal.Controls.RemoveAt(0);
+            FrmModificar frmModificar = new FrmModificar();
+            frmModificar.TopLevel = false;
+            frmModificar.FormBorderStyle = FormBorderStyle.None;
+            frmModificar.Dock = DockStyle.Fill;
+            this.PanelPrincipal.Controls.Add(frmModificar);
+            frmModificar.Show();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (this.PanelPrincipal.Controls.Count > 0)
+                this.PanelPrincipal.Controls.RemoveAt(0);
+            FrmEliminarcs frmEliminar = new FrmEliminarcs();
+            frmEliminar.TopLevel = false;
+            frmEliminar.FormBorderStyle = FormBorderStyle.None;
+            frmEliminar.Dock = DockStyle.Fill;
+            this.PanelPrincipal.Controls.Add(frmEliminar);
+            frmEliminar.Show();
+        }
     }
 }
