@@ -35,11 +35,18 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.PanelPrincipal = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.PanelPrincipal.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(131)))), ((int)(((byte)(0)))));
             this.panel1.Controls.Add(this.btnAniadirIngrediente);
             this.panel1.Controls.Add(this.btnListadoIngredientes);
             this.panel1.Controls.Add(this.btnModificar);
@@ -53,7 +60,8 @@
             // 
             // btnAniadirIngrediente
             // 
-            this.btnAniadirIngrediente.Location = new System.Drawing.Point(3, 87);
+            this.btnAniadirIngrediente.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAniadirIngrediente.Location = new System.Drawing.Point(1, 87);
             this.btnAniadirIngrediente.Name = "btnAniadirIngrediente";
             this.btnAniadirIngrediente.Size = new System.Drawing.Size(215, 78);
             this.btnAniadirIngrediente.TabIndex = 8;
@@ -63,7 +71,8 @@
             // 
             // btnListadoIngredientes
             // 
-            this.btnListadoIngredientes.Location = new System.Drawing.Point(3, 3);
+            this.btnListadoIngredientes.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnListadoIngredientes.Location = new System.Drawing.Point(1, 3);
             this.btnListadoIngredientes.Name = "btnListadoIngredientes";
             this.btnListadoIngredientes.Size = new System.Drawing.Size(215, 78);
             this.btnListadoIngredientes.TabIndex = 7;
@@ -73,7 +82,8 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(6, 171);
+            this.btnModificar.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnModificar.Location = new System.Drawing.Point(3, 171);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(215, 78);
             this.btnModificar.TabIndex = 6;
@@ -83,7 +93,8 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(6, 255);
+            this.btnEliminar.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEliminar.Location = new System.Drawing.Point(3, 255);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(215, 78);
             this.btnEliminar.TabIndex = 5;
@@ -93,6 +104,7 @@
             // 
             // btnCerrarSesion
             // 
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCerrarSesion.Location = new System.Drawing.Point(3, 517);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(212, 51);
@@ -102,11 +114,43 @@
             // 
             // PanelPrincipal
             // 
+            this.PanelPrincipal.Controls.Add(this.pictureBox1);
+            this.PanelPrincipal.Controls.Add(this.panel2);
             this.PanelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelPrincipal.Location = new System.Drawing.Point(221, 0);
             this.PanelPrincipal.Name = "PanelPrincipal";
             this.PanelPrincipal.Size = new System.Drawing.Size(671, 571);
             this.PanelPrincipal.TabIndex = 1;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(131)))), ((int)(((byte)(0)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(671, 52);
+            this.panel2.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Inventario.Properties.Resources.RecursoLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(170, 196);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(367, 287);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(184, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(321, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Inventario de Ingredientes";
             // 
             // FrmInicio
             // 
@@ -116,8 +160,14 @@
             this.Controls.Add(this.PanelPrincipal);
             this.Controls.Add(this.panel1);
             this.Name = "FrmInicio";
-            this.Text = "Form1";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Inicio";
             this.panel1.ResumeLayout(false);
+            this.PanelPrincipal.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -131,5 +181,8 @@
         private Button btnEliminar;
         private Button btnAniadirIngrediente;
         private Button btnListadoIngredientes;
+        private Panel panel2;
+        private PictureBox pictureBox1;
+        private Label label1;
     }
 }
