@@ -2,43 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "BDatos/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/BDatos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BDatos.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
-      },
       "Logica/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "BDatos": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/Logica.dll": {}
         },
         "runtime": {
           "bin/placeholder/Logica.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ]
+        }
       }
     }
   },
   "libraries": {
-    "BDatos/1.0.0": {
-      "type": "project",
-      "path": "../BDatos/BDatos.csproj",
-      "msbuildProject": "../BDatos/BDatos.csproj"
-    },
     "Logica/1.0.0": {
       "type": "project",
       "path": "../Logica/Logica.csproj",
@@ -51,33 +26,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nixon\\.nuget\\packages\\": {}
+    "C:\\Users\\wromero\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nixon\\source\\repos\\Inventario\\Inventario\\Inventario.csproj",
+      "projectUniqueName": "C:\\Users\\wromero\\source\\repos\\Inventario-Restaurante\\Inventario\\Inventario.csproj",
       "projectName": "Inventario",
-      "projectPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Inventario\\Inventario.csproj",
-      "packagesPath": "C:\\Users\\nixon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Inventario\\obj\\",
+      "projectPath": "C:\\Users\\wromero\\source\\repos\\Inventario-Restaurante\\Inventario\\Inventario.csproj",
+      "packagesPath": "C:\\Users\\wromero\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\wromero\\source\\repos\\Inventario-Restaurante\\Inventario\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nixon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\wromero\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\nixon\\source\\repos\\Inventario\\Logica\\Logica.csproj": {
-              "projectPath": "C:\\Users\\nixon\\source\\repos\\Inventario\\Logica\\Logica.csproj"
+            "C:\\Users\\wromero\\source\\repos\\Inventario-Restaurante\\Logica\\Logica.csproj": {
+              "projectPath": "C:\\Users\\wromero\\source\\repos\\Inventario-Restaurante\\Logica\\Logica.csproj"
             }
           }
         }
