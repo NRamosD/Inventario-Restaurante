@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BDatos;
+using System.Data;
+using BDts;
 
-
-namespace Logica
+namespace Logic
 {
     public class LogicaOperaciones
     {
@@ -16,7 +15,7 @@ namespace Logica
         public DataTable MostrarDatosIngredientes(int _id)
         {
             DataTable tabla = new DataTable();
-            tabla = objOpe.MostrarIngrediente(_id.ToString());
+            tabla = objOpe.MostrarIngrediente(_id);
             return tabla;
         }
 
