@@ -16,7 +16,7 @@ namespace Inventario
         {
             InitializeComponent();
         }
-        LogicaOperacion objL = new LogicaOperaciones();
+        Logica.LogicaOperaciones objL = new Logica.LogicaOperaciones();
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -28,7 +28,7 @@ namespace Inventario
             {
                 if (MessageBox.Show("¿Desea confirmar los cambios?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    objL.EditarProducto(textBox4.Text, textBox1.Text, textBox2.Text, textBox3.Text);
+                    objL.EditarIngrediente(textBox4.Text, textBox1.Text, int.Parse(textBox2.Text), decimal.Parse(textBox3.Text));
                     MessageBox.Show("Cambios efectuados exitosamente");
                     this.Close();
                 }
@@ -47,7 +47,7 @@ namespace Inventario
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
-            tabla = objL.MostrarDatosProducto(int.Parse(textBox1.Text));
+            tabla = objL.MostrarDatosIngredientes(int.Parse(textBox1.Text));
             if (tabla.Rows.Count > 0)
             {
                 byte[] arr;
@@ -70,6 +70,11 @@ namespace Inventario
             {
                 e.Handled = true;
             }
+        }
+
+        private void FrmModificar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,10 +16,10 @@ namespace Inventario
         {
             InitializeComponent();
         }
-        LogicaOperacion objL = new LogicaOperaciones();
+        Logica.LogicaOperaciones objL = new Logica.LogicaOperaciones();
         private void Listado_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = objL.ListarIngredientes();
+            dataGridView1.DataSource = objL.MostrarDatosIngredientes();
         }
     }
 }

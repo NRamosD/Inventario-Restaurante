@@ -188,6 +188,7 @@
             this.Controls.Add(this.label2);
             this.Name = "FrmModificar";
             this.ShowIcon = false;
+            this.Load += new System.EventHandler(this.FrmModificar_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

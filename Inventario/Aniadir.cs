@@ -17,13 +17,14 @@ namespace Inventario
             InitializeComponent();
         }
 
-        LogicaOperacion objL = new LogicaOperaciones();
+
+        Logica.LogicaOperaciones objL = new Logica.LogicaOperaciones();
 
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
-                objL.OpInsertarIngrediente(txtNombre.Text, txtCantidad.Text, txtPrecio.Text);
+                objL.InsertarIngrediente(txbCod.Text, txtNombre.Text, int.Parse(txtCantidad.Text), decimal.Parse(txtPrecio.Text));
                 MessageBox.Show("Datos ingresados con éxito");
 
             }
@@ -35,7 +36,7 @@ namespace Inventario
 
         private void Aniadir_Load(object sender, EventArgs e)
         {
-
+            txbCod.Text = objL.NuevoIngrediente().ToString();
         }
     }
 }

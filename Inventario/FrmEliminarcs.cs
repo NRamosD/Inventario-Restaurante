@@ -16,14 +16,14 @@ namespace Inventario
         {
             InitializeComponent();
         }
-        LogicaOperacion objL = new LogicaOperaciones();
+        Logica.LogicaOperaciones objL = new Logica.LogicaOperaciones();
         private void button1_Click(object sender, EventArgs e)
         {
             try
             {
                 if (MessageBox.Show("¿Está seguro que desea eliminar los datos del cliente?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    objL.EliminarCliente(textBox1.Text);
+                    objL.EliminarIngrediente(textBox1.Text);
                     MessageBox.Show("Cliente eliminado con éxito");
                     this.Close();
                 }
@@ -37,7 +37,7 @@ namespace Inventario
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
-            tabla = objL.MostrarDatosProducto(int.Parse(textBox1.Text));
+            tabla = objL.MostrarDatosIngredientes(int.Parse(textBox1.Text));
             if (tabla.Rows.Count > 0)
             {
                 byte[] arr;
