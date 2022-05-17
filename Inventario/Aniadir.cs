@@ -24,7 +24,7 @@ namespace Inventario
         {
             try
             {
-                objL.InsertarIngrediente(txbCod.Text, txtNombre.Text, int.Parse(txtCantidad.Text), decimal.Parse(txtPrecio.Text));
+                objL.InsertarIngrediente(txbCod.Text, txtNombre.Text, txtCantidad.Text, txtPrecio.Text);
                 MessageBox.Show("Datos ingresados con éxito");
 
             }
