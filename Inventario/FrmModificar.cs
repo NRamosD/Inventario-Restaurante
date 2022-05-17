@@ -28,7 +28,7 @@ namespace Inventario
             {
                 if (MessageBox.Show("¿Desea confirmar los cambios?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    objL.EditarIngrediente(textBox4.Text, textBox1.Text, int.Parse(textBox2.Text), decimal.Parse(textBox3.Text));
+                    objL.EditarIngrediente(textBox4.Text, textBox1.Text, textBox2.Text, textBox3.Text);
                     MessageBox.Show("Cambios efectuados exitosamente");
                     this.Close();
                 }
@@ -46,21 +46,20 @@ namespace Inventario
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
+
             DataTable tabla = new DataTable();
-            tabla = objL.MostrarDatosIngredientes(int.Parse(textBox1.Text));
+            tabla = objL.MostrarDatosIngredientes(textBox4.Text);
+
             if (tabla.Rows.Count > 0)
             {
-                byte[] arr;
-                textBox1.Text = tabla.Rows[0][0].ToString();
-                textBox2.Text = tabla.Rows[0][1].ToString();
+                textBox1.Text = tabla.Rows[0][1].ToString();
                 textBox2.Text = tabla.Rows[0][2].ToString();
                 textBox3.Text = tabla.Rows[0][3].ToString();
-                arr = (byte[])tabla.Rows[0][5];
                 button1.Visible = true;
             }
             else
             {
-                MessageBox.Show("Producto no Encontrado");
+                MessageBox.Show("Ingrediente no Encontrado");
             }
         }
 

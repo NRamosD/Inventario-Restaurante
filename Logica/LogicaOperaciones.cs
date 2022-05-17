@@ -13,7 +13,7 @@ namespace Logica
     {
         private Operaciones objOpe = new Operaciones();
         DataTable tabla = new DataTable();
-        public DataTable MostrarDatosIngredientes(int _id)
+        public DataTable MostrarDatosIngredientes(string _id)
         {
             DataTable tabla = new DataTable();
             tabla = objOpe.MostrarIngrediente(_id.ToString());
@@ -37,14 +37,14 @@ namespace Logica
             return objOpe.CrearNuevoIdIngrediente();
         }
 
-        public void InsertarIngrediente(string _id, string _nom, int _cant, decimal _precio_unit)
+        public void InsertarIngrediente(string _id, string _nom, string _cant, string _precio_unit)
         {
-            objOpe.InsertarIngrediente(Convert.ToInt16(_id), _nom, Convert.ToInt16(_cant), _precio_unit);
+            objOpe.InsertarIngrediente(_id, _nom, _cant, _precio_unit);
         }
 
-        public void EditarIngrediente(string _id, string _nom, int _cant, decimal _precio_unit)
+        public void EditarIngrediente(string _id, string _nom, string _cant, string _precio_unit)
         {
-            objOpe.EditarIngrediente(Convert.ToInt16(_id), _nom, Convert.ToInt16(_cant), _precio_unit);
+            objOpe.EditarIngrediente(_id, _nom, _cant, _precio_unit);
         }
 
         public void EliminarIngrediente(string _id)

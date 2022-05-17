@@ -21,10 +21,10 @@ namespace Inventario
         {
             try
             {
-                if (MessageBox.Show("¿Está seguro que desea eliminar los datos del cliente?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("¿Está seguro que desea eliminar los datos del Ingrediente?", "Aviso", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     objL.EliminarIngrediente(textBox1.Text);
-                    MessageBox.Show("Cliente eliminado con éxito");
+                    MessageBox.Show("Ingrediente eliminado con éxito");
                     this.Close();
                 }
             }
@@ -37,20 +37,18 @@ namespace Inventario
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
-            tabla = objL.MostrarDatosIngredientes(int.Parse(textBox1.Text));
+            tabla = objL.MostrarDatosIngredientes(textBox1.Text);
             if (tabla.Rows.Count > 0)
             {
-                byte[] arr;
-                textBox1.Text = tabla.Rows[0][0].ToString();
                 textBox4.Text = tabla.Rows[0][1].ToString();
                 textBox2.Text = tabla.Rows[0][2].ToString();
                 textBox3.Text = tabla.Rows[0][3].ToString();
-                arr = (byte[])tabla.Rows[0][5];
+
                 button1.Visible = true;
             }
             else
             {
-                MessageBox.Show("Producto no Encontrado");
+                MessageBox.Show("Ingrediente no Encontrado");
             }
         }
 

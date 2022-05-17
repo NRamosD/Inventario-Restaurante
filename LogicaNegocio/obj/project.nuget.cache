@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "8UBT6UAZLbnh+tnRZmGafZYGK9x/tzyJQMOA1KnTAiHKIJofGAJnG7Z00AR9zY2uyWFvMjM2psRl3Y+bsREvyw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\wromero\\source\\repos\\Inventario-Restaurante\\LogicaNegocio\\LogicaNegocio.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project BDatos is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project BDatos supports: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "BDatos",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
